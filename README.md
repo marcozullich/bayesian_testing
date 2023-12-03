@@ -17,6 +17,7 @@ The user can choose between different values of the hyperparameters.
 #### Usage
 
 | Arg | Description |
+| ------------- | ------------- |
 | --n_points | Number of datapoints to use. It will limit the data to the first `n_points` in the list above |
 | --mu_0 | The mean hyperparameter of the Normal prior (def. 0.5) |
 | --sigma2_0 | The variance hyperparameter of the Normal prior (def. 0.0025) |
