@@ -36,5 +36,24 @@ Example usage:
 
 `python .\bayesian_posterior_normalnormal.py --plot_prior --plot_posterior --overlay_plots --mu_compare 0.5 --plot_probability --plot_probability_xlim 0.15 --method_compare rope --rope_epsilon 0.02  --n_points 5`
 
+* Selects only 5 out of 10 datapoints ([0.49, 0.55, 0.57, 0.52, 0.58])
 * Prints prior and posterior (overlaying)
 * Execute a ROPE testing with epsilon = 0.02
+
+Output:
+
+```
+Data mean: 0.542, Data variance: 0.0013699999999999988 [num data points: 5]
+Posterior mean: 0.5378514780100936, Posterior variance: 0.000246935832732516
+Intersection exists. ROPE: [0.48 ; 0.52]. CI: [0.5070522274868134 ; 0.5686507285333737]. Intersection: [0.5070522274868134 ; 0.52]. Withold judgement on hypothesis that mu = 0.5.
+```
+
+Charts:
+
+**Prior and posterior**
+
+![](img/sample_prior_posterior.png)
+
+**Graphical visualization of the test**
+
+![](img/rope_testing.png)
